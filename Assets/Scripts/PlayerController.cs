@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
     public void PlayerDead()
     {
         _isPlayerDead = true;
+        GameManager.GameOver(_isPlayerDead);
     }
 
     private void OnDrawGizmosSelected()
